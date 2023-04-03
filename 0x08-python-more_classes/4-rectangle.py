@@ -13,6 +13,7 @@ class Rectangle:
     def width(self):
         """ Gets width """
         return self.__width
+
     @width.setter
     def width(self, value):
         """ If statement """
@@ -25,7 +26,8 @@ class Rectangle:
     @property
     def height(self):
         """ Gets height """
-        return slf.__height
+        return self.__height
+
     @height.setter
     def height(self, value):
         """ If statement """
@@ -38,6 +40,7 @@ class Rectangle:
     def area(self):
         """ Returns area """
         return self.__width * self.__height
+
     def perimeter(self):
         """ Returns perimeter """
         if self.__width == 0 or self.__height == 0:
@@ -54,6 +57,7 @@ class Rectangle:
                 res += '#'
             res += '\n'
         return res[:-1]
+
     def __repr__(self):
         """ Repr func """
         return "Rectangle({}, {})".format(self.__width, self.__height)
