@@ -5,9 +5,9 @@
 class Rectangle:
     number_of_instances = 0
 
-    """ Defines __init__ func """
+    """ Defines a function called __init__ """
     def __init__(self, width=0, height=0):
-        """ Initializes width & height """
+        """ Initializes width and height with self """
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
