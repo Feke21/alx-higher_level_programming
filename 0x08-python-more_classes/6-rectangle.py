@@ -3,13 +3,14 @@
 
 
 class Rectangle:
+    """ Rectangle class attributes """
     number_of_instances = 0
-    """ Defines a function called __init__ """
+
+    """ Defines __init__ func """
     def __init__(self, width=0, height=0):
-        """ Initializes width and height with self """
+        """ Initialize width and height """
         self.width = width
         self.height = height
-
         Rectangle.number_of_instances += 1
 
     @property
@@ -51,7 +52,7 @@ class Rectangle:
         return 2 * (self.__width + self.__height)
 
     def __str__(self):
-        """ Defines rectangle in hash char form """
+        """ Rectangle in hash char form """
         if self.__width == 0 or self.__height == 0:
             return ''
         res = ''
@@ -68,5 +69,4 @@ class Rectangle:
     def __del__(self):
         """ Del func """
         print("Bye rectangle...")
-
         Rectangle.number_of_instances -= 1
