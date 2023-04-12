@@ -15,7 +15,7 @@ class Student:
 
     def to_json(self, attrs=None):
         """ retrieves a dict rep of Student """
-        if attrs != None:
+        if attrs is not None:
             res = {i: self.__dict__[i] for i in self.__dict__.keys() & attrs}
             return res
         else:
