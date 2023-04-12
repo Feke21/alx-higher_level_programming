@@ -3,7 +3,7 @@
 
 
 class MyInt(int):
-    """ 
+    """
     MyInt inherits from class int
     but the behaviour of != and == is reversed
     """
