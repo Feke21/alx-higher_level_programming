@@ -1,0 +1,25 @@
+7-base_geometry
+===============
+
+importing class:
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+checking for module docstring:
+	>>> i = __import__('7-base_geometry').__doc__
+	>>> len(i) > 1
+	True
+
+checking for class docstring:
+	>>> j = __import__('7-base_geometry').BaseGeometry.__doc__
+	>>> len(j) > 1
+	True
+
+checking for method docstring:
+	>>> tarea = __import__('7-base_geometry').BaseGeometry.area.__doc__
+	>>> len(tarea) > 1
+	True
+
+checking for method docstring:
+	>>> tintv = __import__('7-base_geometry').BaseGeometry.integer_validator.__doc__
+	>>> len(int) > 1
+	True
