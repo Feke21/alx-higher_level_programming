@@ -1,0 +1,2 @@
+-- removes all records with score of <= 5 in second_table of database hbtn_0c_0
+DELETE FROM second_table WHERE `score` <= 5; 
