@@ -1,10 +1,10 @@
--- Create db 'hbtn_0d_usa'
--- If db already exists, script should not fail
+-- Create database hbtn_0d_usa
+-- If database already exists, script should not fail
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 
--- Create table 'cities' in db 'hbtn_0d_usa'
+-- Create table, cities in database hbtn_0d_usa
 -- id INT unique, auto generated, not null, primary key
--- state_id INT not null, foreign key that references id of 'states' table
+-- state_id INT not null, foreign key that references id of states table
 -- name VARCHAR(256) not null
 -- If table already exists, script should not fail
 CREATE TABLE IF NOT EXISTS hbtn_0d_usa.cities
