@@ -1,1 +1,1 @@
-This is my readme for my javascript warm up project
+This is my readme file on my start in Javascript
