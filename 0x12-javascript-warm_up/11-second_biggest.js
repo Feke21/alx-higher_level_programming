@@ -1,10 +1,16 @@
 #!/usr/bin/node
-if (process.argv.length <= 3) {
-	console.log(0);
+const arr = process.argv.slice(2);
+
+function secondBiggest (array) {
+  let res;
+  if (array.length === 0 || array.length === 1) {
+    return (0);
+  } else {
+    array.sort((a, b) => b - a);
+    array.shift();
+    res = array.shift();
+    return (res);
+  }
 }
-else {
-	const args = process.argv.map(Number)
-	.slice(2, process.argv.length)
-	.sort((a, b) => a - b);
-	console.log(args[args.length - 2])'
-}
+const res = secondBiggest(arr);
+console.log(res);
