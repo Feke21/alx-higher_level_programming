@@ -1,5 +1,6 @@
 #!/usr/bin/node
-for (const multi of ['C is fun', 'Python is cool', 'JavaScript is amazing'])
-{
-	console.log(multi);
+const multi = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
+
+for (let i = 0; i < multi.length; i++) {
+  console.log(multi[i]);
 }
