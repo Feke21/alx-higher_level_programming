@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-displays the value of the X-Request-Id variable found in the header of the response.
+display value of the X-Request-Id var in header of the response.
 """
 
 
