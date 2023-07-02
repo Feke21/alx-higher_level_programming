@@ -5,7 +5,7 @@ fetches https://alx-intranet.hbtn.io/status with package Requests
 
 
 if __name__ == '__main__':
-    import requests
+    from requests import get
 
     html = requests.get('https://alx-intranet.hbtn.io/status')
     print('Body response:')
